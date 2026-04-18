@@ -46,6 +46,10 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-brand-pink: #C86A7A;
+  --color-brand-peach: #FEE8D6;
+  --color-brand-light-pink: #FBD7D9;
+  --color-brand-dark-peach: #FBC5A8;
 }
 
 :root {
@@ -126,5 +130,11 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer components {
+  button, .button {
+    @apply transition-all duration-300 active:scale-95;
   }
 }
