@@ -108,7 +108,7 @@ export default function ShopPage() {
               max={1000000}
               step={10000}
               value={priceRange}
-              onValueChange={setPriceRange}
+              onValueChange={(val) => setPriceRange(val as number[])}
               className="py-4"
             />
             <div className="flex items-center justify-between text-xs text-slate-500">
